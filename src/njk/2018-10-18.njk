@@ -1,0 +1,16 @@
+{% extends '_layouts/detail-entry.njk' %}
+
+{% set entry = data.entries[0] %}
+
+{% block page_title %}{{ entry.title }}{% endblock %}
+
+{% block description %}Blog entry for {{ entry.title}}, {{entry.date}}.{% endblock %}
+
+{% block story %}
+  <h1>{{ entry.title }} - baseball on the high seas</h1>
+  <h5>{{ entry.date }}</h5>
+  <p>Run lineup slide dodgers baseball visitors field play mustard. Wrigley good eye dodgers second base on deck inning hitter line drive. League cheese starter dribbler batting average shortstop left fielder force starting pitcher. Fielder's choice alley third baseman foul baseball, golden sombrero contact. Pine tar astroturf cheese base all-star bleeder dodgers. Sacrifice bunt screwball double switch foul pole win ball third base batting average practice.</p>
+  <img src="img/kraken01.jpg" alt="kraken" class="img-fluid">
+  <p class="byline">By Crit McGillicutty<br>
+  <span>Island Breeze Tribune</span></p>
+{% endblock %}

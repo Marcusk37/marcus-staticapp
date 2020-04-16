@@ -1,0 +1,16 @@
+{% extends '_layouts/detail-entry.njk' %}
+
+{% set entry = data.entries[2] %}
+
+{% block page_title %}{{ entry.title}}{% endblock %}
+
+{% block description %}Blog entry for {{ entry.date}}, {{ entry.title }} {% endblock %}
+
+{% block story %}
+  <h1>{{ entry.title }} - king of the pitch</h1>
+  <h5>{{ entry.date }}</h5>
+  <p>Center-half referee four-four-two goal midfielder halftime World Cup ball UEFA European Championship forward red card soccer upper 90 number 10 yellow card. Four-four-two three-five-two center-half red card upper 90 chip goalie striker brace World Cup number 10 pitch forward yellow card midfielder UEFA European Championship. Goal three-five-two yellow card soccer pitch midfielder brace World Cup number 10 African Cup of Nations chip goalie striker upper 90 defender. One-two midfielder center-half ball four-four-two three-five-two red card chip World Cup defender forward African Cup of Nations referee pitch brace.</p>
+  <img src="img/kraken03.jpg" alt="kraken" class="img-fluid">
+  <p class="byline">By Crit McGillicutty<br>
+  <span>Island Breeze Tribune</span></p>
+{% endblock %}
